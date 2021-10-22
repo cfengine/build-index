@@ -91,7 +91,7 @@
       "tags": ["official", "base"],
       "repo": "https://github.com/cfengine/masterfiles",
       "by": "https://github.com/cfengine",
-      "commit": "c39b79c0e7a42522c69cff3d87a5bc5ac9471369",
+      "commit": "5c7dc5b43088e259a94de4e5a9f17c0ce9781a0f",
       "steps": ["run ./autogen.sh", "delete ./autogen.sh", "copy ./ ./"]
     },
     "mpf": {
