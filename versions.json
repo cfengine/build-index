@@ -1590,5 +1590,39 @@
       "by": "https://github.com/vpodzime",
       "repo": "https://github.com/vpodzime/cfengine-security-hardening"
     }
+  },
+  "cfengine-supported": {
+    "0.0.1": {
+      "commit": "6a09cc850423a063533ffe19e9066753952b9d8d",
+      "timestamp": 1639070895190,
+      "archive_url": "modules/cfengine-supported/6a09cc850423a063533ffe19e9066753952b9d8d.tar.gz",
+      "archive_sha256": "bb3c95a3bcf53f1f18d48354e9fa74ef885a6bca9d1fd17b829230ae1165e85b",
+      "readme_url": "modules/cfengine-supported/6a09cc850423a063533ffe19e9066753952b9d8d.org",
+      "readme_sha256": "485b5713335867d1403577211586926e0fda3a709da18aab95efe0dc6fa666a0",
+      "steps": [
+        "copy ./inventory-cfengine-version-support-status.cf services/cfengine-supported/",
+        "json ./cfbs/def.json def.json"
+      ],
+      "subdirectory": "",
+      "by": "https://github.com/nickanderson",
+      "repo": "https://github.com/nickanderson/cfengine-supported"
+    }
+  },
+  "sudo-enforce-allowed-users": {
+    "0.0.1": {
+      "commit": "a228f837924b32685f22248d86b808bc37fb2a75",
+      "timestamp": 1639070895485,
+      "archive_url": "modules/sudo-enforce-allowed-users/a228f837924b32685f22248d86b808bc37fb2a75.tar.gz",
+      "archive_sha256": "e50c53d5a3aca52fcca081b87fd68683e807c1d7b9bbd8ff9c76a2997773c10a",
+      "readme_url": "modules/sudo-enforce-allowed-users/a228f837924b32685f22248d86b808bc37fb2a75.org",
+      "readme_sha256": "a1bcb90ef9d263fed932193e6800a6ed79567911f3a4918896b1b2a7a9b71de3",
+      "steps": [
+        "copy ./sudo-enforce-allowed-users.cf services/security-hardening/sudo-enforce-allowed-users/",
+        "json cfbs/def.json def.json"
+      ],
+      "subdirectory": "./sudo-enforce-allowed-users/",
+      "by": "https://github.com/nickanderson",
+      "repo": "https://github.com/nickanderson/cfengine-security-hardening"
+    }
   }
 }
