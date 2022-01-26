@@ -1986,8 +1986,8 @@
     }
   },
   "surf-cfengine-library": {
-    "0.1.0": {
-      "commit": "38ebc2dc5b5a214e6410647716e774e33c3ebfb1",
+    "0.1.2": {
+      "commit": "09e07dda690f5806d5f17be8e71d9fdcc51bbdf1",
       "timestamp": 1643141344736,
       "archive_url": "modules/surf-cfengine-library/38ebc2dc5b5a214e6410647716e774e33c3ebfb1.tar.gz",
       "archive_sha256": "a5fc757ae494ab5bbc8ec6be142310b71a24cbddc077fe9a731c581d0a87386e",
