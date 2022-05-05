@@ -914,6 +914,20 @@
       "subdirectory": "management/every-minute",
       "by": "https://github.com/olehermanse",
       "repo": "https://github.com/cfengine/modules"
+    },
+    "1.0.0-1": {
+      "commit": "74b6776ca4e120285f9c44e68ccf79eef84accfd",
+      "timestamp": 1651762859100,
+      "archive_url": "modules/every-minute/74b6776ca4e120285f9c44e68ccf79eef84accfd.tar.gz",
+      "archive_sha256": "5f9166f571496b6e2624e7f92423e58e00bfe1c76fc500100445d4208cc1a90b",
+      "readme_url": "modules/every-minute/74b6776ca4e120285f9c44e68ccf79eef84accfd.md",
+      "readme_sha256": "442cd9b2a949be27ec99cea309d67660ccae9fe326da27bbba07648693b50ac9",
+      "steps": [
+        "json def.json def.json"
+      ],
+      "subdirectory": "management/every-minute",
+      "by": "https://github.com/olehermanse",
+      "repo": "https://github.com/cfengine/modules"
     }
   },
   "inventory-local-users-locked": {
@@ -2116,6 +2130,26 @@
       "archive_sha256": "22a4c8d5d8b8f4511664d34dbf849be23c850523ea37381fe7c79f0a2636dcea",
       "readme_url": "modules/surf-cfengine-library/09e07dda690f5806d5f17be8e71d9fdcc51bbdf1.md",
       "readme_sha256": "da30aec13038cc567ec92610860d74d94db0c98e56eaae3239d820d6d22cd413",
+      "steps": [
+        "copy ./masterfiles/lib/scl/ lib/scl/",
+        "copy ./masterfiles/services/autorun/scl.cf services/autorun/scl.cf",
+        "copy ./modules/ modules/scl/",
+        "copy ./scl_example.json scl_example.json",
+        "copy ./services/ services/scl/",
+        "copy ./templates/ lib/scl/.git/templates",
+        "json scl_example.json def.json"
+      ],
+      "subdirectory": "",
+      "by": "https://github.com/basvandervlies/",
+      "repo": "https://github.com/basvandervlies/cf_surfsara_lib"
+    },
+    "0.1.3": {
+      "commit": "74d8d0593a85100388ade76c85793132b95c72ac",
+      "timestamp": 1651762859441,
+      "archive_url": "modules/surf-cfengine-library/74d8d0593a85100388ade76c85793132b95c72ac.tar.gz",
+      "archive_sha256": "363ccfc3b5c67514811eb48a9fed145ddb7560b581de31e44782ec92d32081c1",
+      "readme_url": "modules/surf-cfengine-library/74d8d0593a85100388ade76c85793132b95c72ac.md",
+      "readme_sha256": "f2258ed962f5a51259afa2d6d02234d418e7b7264adf67bad42ac403bab15ea2",
       "steps": [
         "copy ./masterfiles/lib/scl/ lib/scl/",
         "copy ./masterfiles/services/autorun/scl.cf services/autorun/scl.cf",
