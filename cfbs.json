@@ -81,7 +81,7 @@
     },
     "conditional-installer": {
       "description": "Allows you to specify packages you want installed and conditions for where you want them installed, as well as a list of packages you generally want uninstalled.",
-      "tags": ["supported", "security", "management"],
+      "tags": ["security", "management", "experimental"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/olehermanse",
       "version": "0.0.1",
