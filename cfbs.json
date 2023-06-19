@@ -924,7 +924,7 @@
           "question": "What mode should the module be in?"
         }
       ]
-    }
+    },
     "prelinking-disabled": { "alias": "disable-prelinking" },
     "promise-type-ansible": {
       "description": "Promise type to run ansible playbooks.",
