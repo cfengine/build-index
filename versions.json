@@ -4158,6 +4158,22 @@
       "subdirectory": "security/install-aide",
       "by": "https://github.com/olehermanse",
       "repo": "https://github.com/cfengine/modules"
+    },
+    "0.0.2": {
+      "commit": "3055538003b5dc88c80547703368da33fd43a5a9",
+      "timestamp": 1729802865110,
+      "archive_url": "modules/install-aide/3055538003b5dc88c80547703368da33fd43a5a9.tar.gz",
+      "archive_sha256": "2e7d6f2c5a6343a52a5ce5892890890b3c6ac3183b167e495993543c5522ca79",
+      "readme_url": "modules/install-aide/3055538003b5dc88c80547703368da33fd43a5a9.md",
+      "readme_sha256": "78bae342c609f2b834c1059178ef765c694b0db379997ccdb17620c0e425ff10",
+      "steps": [
+        "copy install-aide.cf services/cfbs/modules/install-aide/install-aide.cf",
+        "bundles install_aide",
+        "policy_files services/cfbs/modules/install-aide/install-aide.cf"
+      ],
+      "subdirectory": "security/install-aide",
+      "by": "https://github.com/olehermanse",
+      "repo": "https://github.com/cfengine/modules"
     }
   },
   "maintainers-in-motd": {
