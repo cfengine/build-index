@@ -9,9 +9,17 @@ on:
 
     workflow_dispatch:
 
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
 jobs:
     mirroring:
         runs-on: ubuntu-latest
+        env:
+          AWS_REGION: us-east-1
+          AWS_ROLE: arn:aws:iam::304194462000:role/cfbs-github-action
+          AWS_ROLE_SESSION_NAME: cfbs-github-action
         steps:
             - name: Checks-out repository
               uses: actions/checkout@v4
@@ -26,11 +34,16 @@ jobs:
                 cd scripts
                 npm install
 
+            - name: configure aws credentials
+              uses: aws-actions/configure-aws-credentials@e3dd6a429d7300a6a4c196c26e071d42e0343502
+              with:
+                role-to-assume: ${{ env.AWS_ROLE }}
+                role-session-name: ${{ env.AWS_ROLE_SESSION_NAME }}
+                aws-region: ${{ env.AWS_REGION }}
+
             - name: Upload modules to S3
               run: node scripts/s3uploading.js
               env:
-                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
                 BUCKET_NAME: cfbs
                 workdir: ${{ github.workspace }}
 

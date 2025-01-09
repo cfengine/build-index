@@ -6,8 +6,7 @@ const crypto = require('crypto');
 
 const workdir = process.env.workdir;
 const s3 = new AWS.S3({
-    "AWS_ACCESS_KEY_ID": process.env.AWS_ACCESS_KEY_ID,
-    "AWS_SECRET_ACCESS_KEY": process.env.AWS_SECRET_ACCESS_KEY
+    region: process.env.AWS_REGION
 });
 const tmp = `${workdir}/tmp`;
 const readmeRegex = new RegExp('/readme((\.(org|md|adoc|rst)$)|$)', 'i'); // readme, readme.org, readme.adoc, readme.md, readme.rst
