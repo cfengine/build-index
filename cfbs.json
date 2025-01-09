@@ -44,8 +44,8 @@
       "tags": ["supported", "management"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/olehermanse",
-      "version": "1.0.1",
-      "commit": "c3b7329b240cf7ad062a0a64ee8b607af2cb912a",
+      "version": "1.0.2",
+      "commit": "e603b586e4028364ceea234f3b71c6e5d78b811e",
       "subdirectory": "management/autorun",
       "steps": ["json def.json def.json"]
     },
