@@ -27,6 +27,20 @@
       "subdirectory": "management/autorun",
       "by": "https://github.com/olehermanse",
       "repo": "https://github.com/cfengine/modules"
+    },
+    "1.0.2": {
+      "commit": "e603b586e4028364ceea234f3b71c6e5d78b811e",
+      "timestamp": 1736433654399,
+      "archive_url": "modules/autorun/e603b586e4028364ceea234f3b71c6e5d78b811e.tar.gz",
+      "archive_sha256": "21ecaa13349a07de8f435e9249414a8a04092d5014adbec3a77f8cb507104b6e",
+      "readme_url": "modules/autorun/e603b586e4028364ceea234f3b71c6e5d78b811e.md",
+      "readme_sha256": "63e6cb1be41a5b7356a225ea6772e86856a202770587228fc2d1c8956ab25820",
+      "steps": [
+        "json def.json def.json"
+      ],
+      "subdirectory": "management/autorun",
+      "by": "https://github.com/olehermanse",
+      "repo": "https://github.com/cfengine/modules"
     }
   },
   "client-initiated-reporting": {
