@@ -67,7 +67,7 @@ jobs:
               run: |
                 body=$(cat commitMsg.txt)
                 body="${body//$'\n'/'%0A'}"
-                echo ::set-output name=body::$body
+                echo "body=$body" >> $GITHUB_OUTPUT
 
             - name: Create Pull Request
               if: hashFiles('git_diff_exists') != ''
