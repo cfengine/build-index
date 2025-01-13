@@ -17,3 +17,5 @@ Use at your own risk!
 ## Contribution Tips
 
 * Run `cfbs pretty ./cfbs.json` after editing to ensure proper formatting.
+
+test
