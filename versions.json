@@ -5146,6 +5146,25 @@
       "dependencies": [
         "windows-capability"
       ]
+    },
+    "1.1.0": {
+      "commit": "7c6456cef233d61d16719f1fcdc2cdbd6bc1142f",
+      "timestamp": 1744917834717,
+      "archive_url": "modules/windows-openssh-server/7c6456cef233d61d16719f1fcdc2cdbd6bc1142f.tar.gz",
+      "archive_sha256": "e580550c409fdce964c37f5b2b4390a01d0fcc70fa7a499ee9b8e1f42cac4536",
+      "readme_url": null,
+      "readme_sha256": null,
+      "steps": [
+        "copy windows-openssh-server.cf services/cfbs/software/windows/windows-openssh-server.cf",
+        "policy_files services/cfbs/software/windows/windows-openssh-server.cf",
+        "bundles windows_openssh_server"
+      ],
+      "subdirectory": "software/windows",
+      "by": "https://github.com/craigcomstock",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "windows-capability"
+      ]
     }
   },
   "windows-optional-feature": {
