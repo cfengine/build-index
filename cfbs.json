@@ -1135,8 +1135,8 @@
       "tags": ["promise-type", "docker", "experimental"],
       "repo": "https://github.com/basvandervlies/scl_modules",
       "by": "https://github.com/basvandervlies",
-      "version": "1.2.0",
-      "commit": "c78bf70f21df4194efd5a25720d1448ff8495825",
+      "version": "1.2.2",
+      "commit": "2b78dea5b274f86d365e6f9e724a3a4d2bd8e775",
       "subdirectory": "promise-types/docker_compose",
       "dependencies": ["library-for-promise-types-in-bash"],
       "steps": [
