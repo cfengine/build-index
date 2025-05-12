@@ -4822,6 +4822,24 @@
       "dependencies": [
         "library-for-promise-types-in-bash"
       ]
+    },
+    "1.2.2": {
+      "commit": "2b78dea5b274f86d365e6f9e724a3a4d2bd8e775",
+      "timestamp": 1747081699671,
+      "archive_url": "modules/promise-type-docker-compose/2b78dea5b274f86d365e6f9e724a3a4d2bd8e775.tar.gz",
+      "archive_sha256": "262457cfa7963caf1d0fb5e391593940841131faa5e7bea5d1905e98f66d37f6",
+      "readme_url": "modules/promise-type-docker-compose/2b78dea5b274f86d365e6f9e724a3a4d2bd8e775.md",
+      "readme_sha256": "c7c50cc59fba73f69b3b995a0dfdf6bdb6db8f0b1187b397b24d3bed93b4dafc",
+      "steps": [
+        "copy docker_compose.sh modules/promises/docker_compose.sh",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/docker_compose",
+      "by": "https://github.com/basvandervlies",
+      "repo": "https://github.com/basvandervlies/scl_modules",
+      "dependencies": [
+        "library-for-promise-types-in-bash"
+      ]
     }
   },
   "inventory-physical-memory": {
