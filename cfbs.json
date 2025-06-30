@@ -1186,6 +1186,20 @@
         "append enable.cf services/init.cf"
       ]
     },
+    "promise-type-symlinks": {
+      "description": "Promise type to write concise policy for symbolic links.",
+      "tags": ["promise-type", "experimental"],
+      "repo": "https://github.com/cfengine/modules",
+      "by": "https://github.com/victormlg",
+      "version": "0.0.1",
+      "commit": "3dc5aae8195e26d7bf9af1c1c3a6f191d35e7356",
+      "subdirectory": "promise-types/symlinks",
+      "dependencies": ["library-for-promise-types-in-python"],
+      "steps": [
+        "copy symlinks.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ]
+    },
     "promise-type-systemd": {
       "description": "Promise type to manage systemd services.",
       "tags": ["supported", "promise-type", "systemd"],
@@ -1422,6 +1436,7 @@
         "json scl_example.json def.json"
       ]
     },
+    "symlinks": { "alias": "promise-type-symlinks" },
     "systemd": { "alias": "promise-type-systemd" },
     "telnet-server-not-installed": { "alias": "uninstall-telnet-server" },
     "tmp-file-age": {
