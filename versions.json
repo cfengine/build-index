@@ -5265,5 +5265,25 @@
       "by": "https://github.com/craigcomstock",
       "repo": "https://github.com/cfengine/modules"
     }
+  },
+  "promise-type-symlinks": {
+    "0.0.1": {
+      "commit": "3dc5aae8195e26d7bf9af1c1c3a6f191d35e7356",
+      "timestamp": 1751294851438,
+      "archive_url": "modules/promise-type-symlinks/3dc5aae8195e26d7bf9af1c1c3a6f191d35e7356.tar.gz",
+      "archive_sha256": "541741cd787ec5d393538b3b2a6d5af57d2e75f32a6e6b34a140dd7e2baa3b58",
+      "readme_url": "modules/promise-type-symlinks/3dc5aae8195e26d7bf9af1c1c3a6f191d35e7356.md",
+      "readme_sha256": "8ae575bb17dd0037f75a76737bbc88d0ebd15b387fcffe3fb9853ad160c07d46",
+      "steps": [
+        "copy symlinks.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/symlinks",
+      "by": "https://github.com/victormlg",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    }
   }
 }
