@@ -5285,5 +5285,25 @@
         "library-for-promise-types-in-python"
       ]
     }
+  },
+  "promise-type-json": {
+    "0.0.1": {
+      "commit": "40b990367b528972c41f826fa554b8dd4a415f47",
+      "timestamp": 1751406707227,
+      "archive_url": "modules/promise-type-json/40b990367b528972c41f826fa554b8dd4a415f47.tar.gz",
+      "archive_sha256": "1577fe0ed63e4e05de56326cd7b8f528117532cb2a76400ff3e2798f97abb18c",
+      "readme_url": "modules/promise-type-json/40b990367b528972c41f826fa554b8dd4a415f47.md",
+      "readme_sha256": "32fb2bc9e166e71248817a88ceb4728ad05b7444b83b714749bd203cbe19ed59",
+      "steps": [
+        "copy json_promise_type.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/json",
+      "by": "https://github.com/victormlg",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    }
   }
 }
