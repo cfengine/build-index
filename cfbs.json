@@ -803,6 +803,7 @@
         "copy ./inventory_yum_update_info.cf services/autorun/inventory_yum_update_info.cf"
       ]
     },
+    "json": { "alias": "promise-type-json" },
     "kernel-settings-sysctl-conf": {
       "description": "Manages settings in the /etc/sysctl.conf file.",
       "tags": ["management", "kernel"],
@@ -1183,6 +1184,20 @@
       "dependencies": ["library-for-promise-types-in-python"],
       "steps": [
         "copy http_promise_type.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ]
+    },
+    "promise-type-json": {
+      "description": "Promise type to manipulate json files",
+      "tags": ["promise-type", "experimental"],
+      "repo": "https://github.com/cfengine/modules",
+      "by": "https://github.com/victormlg",
+      "version": "0.0.1",
+      "commit": "40b990367b528972c41f826fa554b8dd4a415f47",
+      "subdirectory": "promise-types/json",
+      "dependencies": ["library-for-promise-types-in-python"],
+      "steps": [
+        "copy json_promise_type.py modules/promises/",
         "append enable.cf services/init.cf"
       ]
     },
