@@ -65,10 +65,11 @@ jobs:
               name: Parse commit message from file into variable
               if: hashFiles('git_diff_exists') != ''
               run: |
-                echo "body<<EOF" >> $GITHUB_OUTPUT
-                cat commitMsg.txt >> $GITHUB_OUTPUT
-                echo "EOF" >> $GITHUB_OUTPUT
-
+                {
+                  echo 'body<<EOF'
+                  cat commitMsg.txt
+                  echo 'EOF'
+                } >> "$GITHUB_OUTPUT"
             - name: Create Pull Request
               if: hashFiles('git_diff_exists') != ''
               uses: cfengine/create-pull-request@v7
