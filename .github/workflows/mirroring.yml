@@ -68,7 +68,7 @@ jobs:
                 {
                   echo 'body<<EOF'
                   cat commitMsg.txt
-                  echo 'EOF'
+                  echo -e "\nEOF"
                 } >> "$GITHUB_OUTPUT"
             - name: Create Pull Request
               if: hashFiles('git_diff_exists') != ''
