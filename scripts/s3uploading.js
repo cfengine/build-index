@@ -9,7 +9,7 @@ const s3 = new AWS.S3({
     region: process.env.AWS_REGION
 });
 const tmp = `${workdir}/tmp`;
-const readmeRegex = new RegExp('/readme((.(org|md|adoc|rst)$)|$)', 'i'); // readme, readme.org, readme.adoc, readme.md, readme.rst
+const readmeRegex = new RegExp('/readme((\\.(org|md|adoc|rst)$)|$)', 'i'); // readme, readme.org, readme.adoc, readme.md, readme.rst
 const Bucket = process.env.BUCKET_NAME
 
 const readJSON = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
