@@ -95,7 +95,6 @@
       "steps": ["json def.json def.json"]
     },
     "compliance-report-imports": {
-      "name": "compliance-report-imports",
       "description": "Used by other modules to import compliance reports to Mission Portal.",
       "tags": ["experimental", "cfengine-enterprise"],
       "repo": "https://github.com/nickanderson/cfengine-security-hardening",
@@ -123,7 +122,6 @@
       ]
     },
     "compliance-report-os-is-vendor-supported": {
-      "name": "compliance-report-os-is-vendor-supported",
       "description": "Compliance report definition for checking if the current OS version is supported by the vendor.",
       "tags": ["experimental", "compliance-report", "cfengine-enterprise"],
       "repo": "https://github.com/nickanderson/cfengine-security-hardening",
@@ -518,7 +516,6 @@
       ]
     },
     "inventory-etc-login-defs": {
-      "name": "inventory-etc-login-defs",
       "description": "Adds reporting data (inventory) for useful bits from the /etc/login.defs file.",
       "tags": ["supported", "inventory"],
       "repo": "https://github.com/nickanderson/cfengine-inventory-etc-login-defs",
@@ -595,7 +592,6 @@
       ]
     },
     "inventory-local-groups": {
-      "name": "inventory-local-groups",
       "description": "Adds reporting data (inventory) for the local groups on the system.",
       "tags": ["inventory", "supported"],
       "repo": "https://github.com/nickanderson/cfengine-local_users",
@@ -624,7 +620,6 @@
       ]
     },
     "inventory-local-users-locked": {
-      "name": "inventory-local-users-locked",
       "description": "Adds reporting data (inventory) for the local users on the system that are locked.",
       "tags": ["supported", "inventory"],
       "repo": "https://github.com/nickanderson/cfengine-local_users",
@@ -653,7 +648,6 @@
       ]
     },
     "inventory-local-users-password-empty": {
-      "name": "inventory-local-users-password-empty",
       "description": "Adds reporting data (inventory) for the local users on the system that do not have a password set.",
       "tags": ["supported", "inventory", "security"],
       "repo": "https://github.com/nickanderson/cfengine-local_users",
@@ -668,7 +662,6 @@
       ]
     },
     "inventory-local-users-password-hashing-algorithm": {
-      "name": "inventory-local-users-password-hashing-algorithm",
       "description": "Adds reporting data (inventory) for password hashing algorithms in use by local users.",
       "tags": ["supported", "inventory", "security"],
       "repo": "https://github.com/nickanderson/cfengine-local_users",
@@ -853,7 +846,6 @@
       "steps": ["copy cfengine.py modules/promises/"]
     },
     "library-parsed-local-groups": {
-      "name": "library-parsed-local-groups",
       "description": "Parses local group from the /etc/group file on the system.",
       "tags": ["supported", "library"],
       "repo": "https://github.com/nickanderson/cfengine-local_users",
@@ -867,7 +859,6 @@
       ]
     },
     "library-parsed-local-users": {
-      "name": "library-parsed-local-users",
       "description": "Parses local users from /etc/passwd on the system with their attributes from /etc/shadow.",
       "tags": ["supported", "library"],
       "repo": "https://github.com/nickanderson/cfengine-local_users",
