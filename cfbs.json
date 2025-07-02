@@ -1183,8 +1183,8 @@
       "tags": ["promise-type", "experimental"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/victormlg",
-      "version": "0.0.1",
-      "commit": "40b990367b528972c41f826fa554b8dd4a415f47",
+      "version": "0.0.2",
+      "commit": "c0081803ef33647d3660574bf230105b533c0989",
       "subdirectory": "promise-types/json",
       "dependencies": ["library-for-promise-types-in-python"],
       "steps": [
