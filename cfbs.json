@@ -840,10 +840,15 @@
       "tags": ["supported", "library"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/cfengine",
-      "version": "0.2.3",
-      "commit": "2be0eee0788e2e562e43f0254c702f85b368c051",
+      "version": "0.3.0",
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
       "subdirectory": "libraries/python",
-      "steps": ["copy cfengine.py modules/promises/"]
+      "steps": [
+        "copy cfengine_module_library.py modules/promises/cfengine_module_library.py",
+        "replace_version 2 0.0.0 modules/promises/cfengine_module_library.py",
+        "copy cfengine_module_library.py modules/promises/cfengine.py",
+        "replace_version 2 0.0.0 modules/promises/cfengine.py"
+      ]
     },
     "library-parsed-local-groups": {
       "description": "Parses local group from the /etc/group file on the system.",
@@ -1155,12 +1160,13 @@
       "tags": ["promise-type", "experimental"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/larsewi",
-      "version": "0.2.4",
-      "commit": "813fb3d172c8db5642ef69cd5e8ef32b264ef275",
+      "version": "0.2.5",
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
       "subdirectory": "promise-types/groups",
       "dependencies": ["library-for-promise-types-in-python"],
       "steps": [
         "copy groups.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/groups.py",
         "append enable.cf services/init.cf"
       ]
     },
@@ -1169,12 +1175,13 @@
       "tags": ["supported", "promise-type", "http"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/vpodzime",
-      "version": "2.0.1",
-      "commit": "813fb3d172c8db5642ef69cd5e8ef32b264ef275",
+      "version": "2.0.2",
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
       "subdirectory": "promise-types/http",
       "dependencies": ["library-for-promise-types-in-python"],
       "steps": [
         "copy http_promise_type.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/http_promise_type.py",
         "append enable.cf services/init.cf"
       ]
     },
@@ -1183,12 +1190,13 @@
       "tags": ["promise-type", "experimental"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/victormlg",
-      "version": "0.0.2",
-      "commit": "c0081803ef33647d3660574bf230105b533c0989",
+      "version": "0.0.3",
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
       "subdirectory": "promise-types/json",
       "dependencies": ["library-for-promise-types-in-python"],
       "steps": [
         "copy json_promise_type.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/json_promise_type.py",
         "append enable.cf services/init.cf"
       ]
     },
@@ -1197,12 +1205,13 @@
       "tags": ["promise-type", "experimental"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/victormlg",
-      "version": "0.0.1",
-      "commit": "3dc5aae8195e26d7bf9af1c1c3a6f191d35e7356",
+      "version": "0.0.2",
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
       "subdirectory": "promise-types/symlinks",
       "dependencies": ["library-for-promise-types-in-python"],
       "steps": [
         "copy symlinks.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/symlinks.py",
         "append enable.cf services/init.cf"
       ]
     },
@@ -1211,12 +1220,13 @@
       "tags": ["supported", "promise-type", "systemd"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/tranchitella",
-      "version": "0.2.3",
-      "commit": "813fb3d172c8db5642ef69cd5e8ef32b264ef275",
+      "version": "0.2.4",
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
       "subdirectory": "promise-types/systemd",
       "dependencies": ["library-for-promise-types-in-python"],
       "steps": [
         "copy systemd.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/systemd.py",
         "append enable.cf services/init.cf"
       ]
     },
