@@ -1444,6 +1444,23 @@
       "subdirectory": "libraries/python",
       "by": "https://github.com/cfengine",
       "repo": "https://github.com/cfengine/modules"
+    },
+    "0.3.0": {
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
+      "timestamp": 1752609016157,
+      "archive_url": "modules/library-for-promise-types-in-python/258304b1783287d06d13e6851951c95f9b7facb2.tar.gz",
+      "archive_sha256": "31ee70cc0874352e36b137d8f27cc9d0dcde6837403fcc9547176988abe33a1a",
+      "readme_url": "modules/library-for-promise-types-in-python/258304b1783287d06d13e6851951c95f9b7facb2.md",
+      "readme_sha256": "aeb8ec1d656e54d1dd94fc90654c9ed9551f146a09e9a0393e13eee30ccf3d38",
+      "steps": [
+        "copy cfengine_module_library.py modules/promises/cfengine_module_library.py",
+        "replace_version 2 0.0.0 modules/promises/cfengine_module_library.py",
+        "copy cfengine_module_library.py modules/promises/cfengine.py",
+        "replace_version 2 0.0.0 modules/promises/cfengine.py"
+      ],
+      "subdirectory": "libraries/python",
+      "by": "https://github.com/cfengine",
+      "repo": "https://github.com/cfengine/modules"
     }
   },
   "promise-type-ansible": {
@@ -1735,6 +1752,25 @@
       "dependencies": [
         "library-for-promise-types-in-python"
       ]
+    },
+    "0.2.4": {
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
+      "timestamp": 1752609020597,
+      "archive_url": "modules/promise-type-systemd/258304b1783287d06d13e6851951c95f9b7facb2.tar.gz",
+      "archive_sha256": "dfe8222ee8bb87e179d20830c07d69124560efdf131e99f00fac77bf4d6fcc7a",
+      "readme_url": "modules/promise-type-systemd/258304b1783287d06d13e6851951c95f9b7facb2.md",
+      "readme_sha256": "a9f60d602d8026d554308c7a868b0d3ef1a5ee054410108423135a64e8740c43",
+      "steps": [
+        "copy systemd.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/systemd.py",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/systemd",
+      "by": "https://github.com/tranchitella",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
     }
   },
   "promise-type-groups": {
@@ -1801,6 +1837,25 @@
       "readme_sha256": "ef8578fec147461efa73a1e65ccb79fcc440c70fee5bc78f82cc9945f6a712bb",
       "steps": [
         "copy groups.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/groups",
+      "by": "https://github.com/larsewi",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    },
+    "0.2.5": {
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
+      "timestamp": 1752609017031,
+      "archive_url": "modules/promise-type-groups/258304b1783287d06d13e6851951c95f9b7facb2.tar.gz",
+      "archive_sha256": "073df5b593bf5c4ebafc4079ed4e3db87c94f55e79da714dd59223aefee6428d",
+      "readme_url": "modules/promise-type-groups/258304b1783287d06d13e6851951c95f9b7facb2.md",
+      "readme_sha256": "ef8578fec147461efa73a1e65ccb79fcc440c70fee5bc78f82cc9945f6a712bb",
+      "steps": [
+        "copy groups.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/groups.py",
         "append enable.cf services/init.cf"
       ],
       "subdirectory": "promise-types/groups",
@@ -2127,6 +2182,25 @@
       "readme_sha256": "e3f6e565d9248818f0f5e89e5d6afb806ee2863c8355a34dcfa7c38d297d82c1",
       "steps": [
         "copy http_promise_type.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/http",
+      "by": "https://github.com/vpodzime",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    },
+    "2.0.2": {
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
+      "timestamp": 1752609017924,
+      "archive_url": "modules/promise-type-http/258304b1783287d06d13e6851951c95f9b7facb2.tar.gz",
+      "archive_sha256": "e41960c5bbeadfe6ac057ae6dd1d0804e5fb1a1e8c2ba78ad82c69a941231dbc",
+      "readme_url": "modules/promise-type-http/258304b1783287d06d13e6851951c95f9b7facb2.org",
+      "readme_sha256": "e3f6e565d9248818f0f5e89e5d6afb806ee2863c8355a34dcfa7c38d297d82c1",
+      "steps": [
+        "copy http_promise_type.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/http_promise_type.py",
         "append enable.cf services/init.cf"
       ],
       "subdirectory": "promise-types/http",
@@ -5284,6 +5358,25 @@
       "dependencies": [
         "library-for-promise-types-in-python"
       ]
+    },
+    "0.0.2": {
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
+      "timestamp": 1752609019723,
+      "archive_url": "modules/promise-type-symlinks/258304b1783287d06d13e6851951c95f9b7facb2.tar.gz",
+      "archive_sha256": "255ac03153ef2fc02f11b971270b0b3c61dc0fffdcbedb81d853261384c9b02e",
+      "readme_url": "modules/promise-type-symlinks/258304b1783287d06d13e6851951c95f9b7facb2.md",
+      "readme_sha256": "8ae575bb17dd0037f75a76737bbc88d0ebd15b387fcffe3fb9853ad160c07d46",
+      "steps": [
+        "copy symlinks.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/symlinks.py",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/symlinks",
+      "by": "https://github.com/victormlg",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
     }
   },
   "promise-type-json": {
@@ -5314,6 +5407,25 @@
       "readme_sha256": "f0a5bd5fe5bc6cd2f6c6f562ca596d3c50a09c78e08bf93adf1837d31b17d643",
       "steps": [
         "copy json_promise_type.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/json",
+      "by": "https://github.com/victormlg",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    },
+    "0.0.3": {
+      "commit": "258304b1783287d06d13e6851951c95f9b7facb2",
+      "timestamp": 1752609018853,
+      "archive_url": "modules/promise-type-json/258304b1783287d06d13e6851951c95f9b7facb2.tar.gz",
+      "archive_sha256": "215ac8b5324ca4bdf6d941ad18ff2913cb106951b18e8957febb3cb4befd6382",
+      "readme_url": "modules/promise-type-json/258304b1783287d06d13e6851951c95f9b7facb2.md",
+      "readme_sha256": "50bacbc2a333991eb1f547e3f309ef68b84c59be5539120f500aa270fb978346",
+      "steps": [
+        "copy json_promise_type.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/json_promise_type.py",
         "append enable.cf services/init.cf"
       ],
       "subdirectory": "promise-types/json",
