@@ -3768,6 +3768,30 @@
         "autorun",
         "promise-type-groups"
       ]
+    },
+    "1.8.2": {
+      "commit": "a08abbf459836e4fcbc23551a59ffb415d3ef3b7",
+      "timestamp": 1758903945253,
+      "archive_url": "modules/surf-cfengine-library/a08abbf459836e4fcbc23551a59ffb415d3ef3b7.tar.gz",
+      "archive_sha256": "164ada6325d4cb00e75f9707056519395cd6d848957816aa36c3655afa73839d",
+      "readme_url": "modules/surf-cfengine-library/a08abbf459836e4fcbc23551a59ffb415d3ef3b7.md",
+      "readme_sha256": "da804a4477e762f5b898f98383ed51d52f5504aadad4e80cd0f8a029a223fb75",
+      "steps": [
+        "copy ./masterfiles/lib/scl/ lib/scl/",
+        "copy ./masterfiles/services/autorun/scl.cf services/autorun/scl.cf",
+        "copy ./modules/ modules/scl/",
+        "copy ./scl_example.json scl_example.json",
+        "copy ./services/ services/scl/",
+        "copy ./templates/ lib/scl/.git/templates",
+        "json scl_example.json def.json"
+      ],
+      "subdirectory": "",
+      "by": "https://github.com/basvandervlies",
+      "repo": "https://github.com/basvandervlies/cf_surfsara_lib",
+      "dependencies": [
+        "autorun",
+        "promise-type-groups"
+      ]
     }
   },
   "compliance-report-lynis": {
