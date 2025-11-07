@@ -520,10 +520,11 @@
       "tags": ["supported", "inventory"],
       "repo": "https://github.com/nickanderson/cfengine-inventory-etc-login-defs",
       "by": "https://github.com/nickanderson",
-      "version": "0.0.4",
-      "commit": "37670ddd6a92022e895ac191b821e4de6794ac34",
+      "version": "0.0.5",
+      "commit": "84d7e37f147a07238cf97e52d49bd21bdbc9de47",
       "steps": [
-        "copy ./inventory-etc-login-defs.cf services/inventory-etc-login-defs/inventory-etc-login-defs.cf",
+        "copy ./inventory-etc-login-defs.cf services/cfbs/inventory-etc-login-defs.cf",
+        "policy_files services/cfbs/inventory-etc-login-defs.cf",
         "json cfbs/def.json def.json"
       ]
     },
