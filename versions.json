@@ -2363,6 +2363,22 @@
       "subdirectory": "",
       "by": "https://github.com/nickanderson",
       "repo": "https://github.com/nickanderson/cfengine-inventory-etc-login-defs"
+    },
+    "0.0.5": {
+      "commit": "84d7e37f147a07238cf97e52d49bd21bdbc9de47",
+      "timestamp": 1762520356082,
+      "archive_url": "modules/inventory-etc-login-defs/84d7e37f147a07238cf97e52d49bd21bdbc9de47.tar.gz",
+      "archive_sha256": "c3d1664023467a8ee8323c7768c03b7a49d49ffca95018dd41e97544b21b644e",
+      "readme_url": "modules/inventory-etc-login-defs/84d7e37f147a07238cf97e52d49bd21bdbc9de47.org",
+      "readme_sha256": "4b7ff29467da5b35d60f665fe56e5ada7256b11dbb4c0ae35abbe6b8097dcd98",
+      "steps": [
+        "copy ./inventory-etc-login-defs.cf services/cfbs/inventory-etc-login-defs.cf",
+        "policy_files services/cfbs/inventory-etc-login-defs.cf",
+        "json cfbs/def.json def.json"
+      ],
+      "subdirectory": "",
+      "by": "https://github.com/nickanderson",
+      "repo": "https://github.com/nickanderson/cfengine-inventory-etc-login-defs"
     }
   },
   "inventory-local-users-password-hashing-algorithm": {
