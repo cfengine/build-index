@@ -1577,6 +1577,24 @@
       "dependencies": [
         "library-for-promise-types-in-python"
       ]
+    },
+    "0.2.3": {
+      "commit": "dcb2aa283a48bcc61011ad0eea8042a2185b1adc",
+      "timestamp": 1769182749030,
+      "archive_url": "modules/promise-type-ansible/dcb2aa283a48bcc61011ad0eea8042a2185b1adc.tar.gz",
+      "archive_sha256": "c1f9a5017b4cd5fd017871582afde53c22768dadd62787274f7761bac97fc0f3",
+      "readme_url": "modules/promise-type-ansible/dcb2aa283a48bcc61011ad0eea8042a2185b1adc.md",
+      "readme_sha256": "ee682dd655010ac0d7498989b526bdb7dfdbbbd9c43b450e9386045d8e74468c",
+      "steps": [
+        "copy ansible_promise.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/ansible",
+      "by": "https://github.com/tranchitella",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
     }
   },
   "promise-type-git": {
