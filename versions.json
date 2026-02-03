@@ -5581,5 +5581,22 @@
         "library-for-promise-types-in-python"
       ]
     }
+  },
+  "package-method-ansible-galaxy-collection": {
+    "0.0.1": {
+      "commit": "cbaf3fd4e1dc88b78dff4ed00be7c4f3c34ce4b0",
+      "timestamp": 1770044259521,
+      "archive_url": "modules/package-method-ansible-galaxy-collection/cbaf3fd4e1dc88b78dff4ed00be7c4f3c34ce4b0.tar.gz",
+      "archive_sha256": "7333f3eda2a3a05d887fc3a57ec5b035f9074ebb96762402c367a54ea8fa2462",
+      "readme_url": "modules/package-method-ansible-galaxy-collection/cbaf3fd4e1dc88b78dff4ed00be7c4f3c34ce4b0.md",
+      "readme_sha256": "98f773aed3ed16e76c287881e974ae84cbea4edb8958e675bd6e6a151ed653a0",
+      "steps": [
+        "directory ./ services/cfbs/modules/package-method-ansible-galaxy-collection/",
+        "policy_files services/cfbs/modules/package-method-ansible-galaxy-collection/"
+      ],
+      "subdirectory": "management/package-method-ansible-galaxy-collection",
+      "by": "https://github.com/craigcomstock",
+      "repo": "https://github.com/cfengine/modules"
+    }
   }
 }
