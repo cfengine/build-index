@@ -5484,6 +5484,22 @@
       "subdirectory": "inventory",
       "by": "https://github.com/craigcomstock",
       "repo": "https://github.com/cfengine/modules"
+    },
+    "0.0.2": {
+      "commit": "2c7058ed30a821e4abd85e57326a9c2fba4c7c51",
+      "timestamp": 1770940946188,
+      "archive_url": "modules/inventory-windows-services/2c7058ed30a821e4abd85e57326a9c2fba4c7c51.tar.gz",
+      "archive_sha256": "f04ef82607aaf47df67e0c6dbb108d286e583cc59ceee46b26aaad782eb56034",
+      "readme_url": null,
+      "readme_sha256": null,
+      "steps": [
+        "copy inventory-windows-services.cf services/cfbs/inventory-windows-services/",
+        "policy_files services/cfbs/inventory-windows-services/",
+        "bundles inventory_windows_services_running"
+      ],
+      "subdirectory": "inventory/inventory-windows-services",
+      "by": "https://github.com/craigcomstock",
+      "repo": "https://github.com/cfengine/modules"
     }
   },
   "promise-type-symlinks": {
@@ -5596,6 +5612,24 @@
       ],
       "subdirectory": "management/package-method-ansible-galaxy-collection",
       "by": "https://github.com/craigcomstock",
+      "repo": "https://github.com/cfengine/modules"
+    }
+  },
+  "inventory-fde": {
+    "0.0.1": {
+      "commit": "2c7058ed30a821e4abd85e57326a9c2fba4c7c51",
+      "timestamp": 1770940945880,
+      "archive_url": "modules/inventory-fde/2c7058ed30a821e4abd85e57326a9c2fba4c7c51.tar.gz",
+      "archive_sha256": "982d17c015873a8c4dc0cb505c0bde56c57eaa90c15494a7242952a208102b11",
+      "readme_url": "modules/inventory-fde/2c7058ed30a821e4abd85e57326a9c2fba4c7c51.md",
+      "readme_sha256": "0c112065f263550f3ac0654663ff293abc416321a3579abd6a5d89c103422346",
+      "steps": [
+        "copy inventory-fde.cf services/cfbs/inventory-fde/",
+        "policy_files services/cfbs/inventory-fde/",
+        "bundles inventory_fde:main"
+      ],
+      "subdirectory": "inventory/inventory-fde",
+      "by": "https://github.com/nickanderson",
       "repo": "https://github.com/cfengine/modules"
     }
   }
