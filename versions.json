@@ -5631,6 +5631,22 @@
       "subdirectory": "inventory/inventory-fde",
       "by": "https://github.com/nickanderson",
       "repo": "https://github.com/cfengine/modules"
+    },
+    "0.0.2": {
+      "commit": "486a05ecf197f49ccf22cb8db424b6228a7bab52",
+      "timestamp": 1771022613700,
+      "archive_url": "modules/inventory-fde/486a05ecf197f49ccf22cb8db424b6228a7bab52.tar.gz",
+      "archive_sha256": "c01387ade9fc6c281cda00d87d8ba36ec21fc8b2d490dc0d8024142e36aabde0",
+      "readme_url": "modules/inventory-fde/486a05ecf197f49ccf22cb8db424b6228a7bab52.md",
+      "readme_sha256": "13906adf4487aa514a6dcfaa779cf95f5d87167f8458d61fbf5614ce5dc2a5d7",
+      "steps": [
+        "copy inventory-fde.cf services/cfbs/modules/inventory-fde/inventory-fde.cf",
+        "policy_files services/cfbs/modules/inventory-fde/inventory-fde.cf",
+        "bundles inventory_fde:main"
+      ],
+      "subdirectory": "inventory/inventory-fde",
+      "by": "https://github.com/nickanderson",
+      "repo": "https://github.com/cfengine/modules"
     }
   }
 }
