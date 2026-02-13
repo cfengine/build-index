@@ -762,12 +762,12 @@
       "tags": ["supported", "linux", "inventory", "security"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/nickanderson",
-      "version": "0.0.1",
-      "commit": "2c7058ed30a821e4abd85e57326a9c2fba4c7c51",
+      "version": "0.0.2",
+      "commit": "486a05ecf197f49ccf22cb8db424b6228a7bab52",
       "subdirectory": "inventory/inventory-fde",
       "steps": [
-        "copy inventory-fde.cf services/cfbs/inventory-fde/",
-        "policy_files services/cfbs/inventory-fde/",
+        "copy inventory-fde.cf services/cfbs/modules/inventory-fde/inventory-fde.cf",
+        "policy_files services/cfbs/modules/inventory-fde/inventory-fde.cf",
         "bundles inventory_fde:main"
       ]
     },
