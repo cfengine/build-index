@@ -14,6 +14,53 @@
       "subdirectory": "management/allow-all-hosts",
       "steps": ["json def.json def.json"]
     },
+    "command-dispatcher": {
+      "description": "Command dispatcher for running shell commands on schedule",
+      "tags": ["management", "experimental"],
+      "repo": "https://github.com/cfengine/modules",
+      "subdirectory": "management/command-dispatcher",
+      "by": "https://github.com/simonthalvorsen",
+      "version": "0.0.1",
+      "commit": "7ccdba3257d6fd806335e4d77e72828d891de4e5",
+      "steps": [
+        "copy main.cf services/cfbs/modules/command-dispatcher/main.cf",
+        "policy_files services/cfbs/command-dispatcher/main.cf",
+        "bundles command_dispatcher:main",
+        "input ./input.json def.json"
+      ],
+      "input": [
+        {
+          "type": "list",
+          "variable": "commands_to_run",
+          "namespace": "command_dispatcher",
+          "bundle": "main",
+          "label": "Command",
+          "subtype": [
+            {
+              "key": "command",
+              "type": "string",
+              "label": "Command",
+              "question": "Command to run"
+            },
+            {
+              "key": "condition",
+              "type": "string",
+              "label": "Condition",
+              "question": "Condition for when to run",
+              "default": "any"
+            },
+            {
+              "key": "ifelapsed",
+              "type": "string",
+              "label": "ifelapsed",
+              "question": "Number of minutes between promise assessments",
+              "default": "5"
+            }
+          ],
+          "while": "Do you want to specify more commands to be run?"
+        }
+      ]
+    },
     "allow-hosts": {
       "description": "Allows specific hosts (by IP / subnet) to connect and fetch policy.",
       "tags": ["management", "security", "experimental"],
