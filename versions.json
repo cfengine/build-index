@@ -5664,5 +5664,24 @@
       "by": "https://github.com/nickanderson",
       "repo": "https://github.com/cfengine/modules"
     }
+  },
+  "command-dispatcher": {
+    "0.0.1": {
+      "commit": "7ccdba3257d6fd806335e4d77e72828d891de4e5",
+      "timestamp": 1772441077190,
+      "archive_url": "modules/command-dispatcher/7ccdba3257d6fd806335e4d77e72828d891de4e5.tar.gz",
+      "archive_sha256": "6bb469438e22aba09907bc5d5a8ecdd6e3e95cac6b395afe5c4f61c1e2ee900f",
+      "readme_url": null,
+      "readme_sha256": null,
+      "steps": [
+        "copy main.cf services/cfbs/modules/command-dispatcher/main.cf",
+        "policy_files services/cfbs/command-dispatcher/main.cf",
+        "bundles command_dispatcher:main",
+        "input ./input.json def.json"
+      ],
+      "subdirectory": "management/command-dispatcher",
+      "by": "https://github.com/simonthalvorsen",
+      "repo": "https://github.com/cfengine/modules"
+    }
   }
 }
