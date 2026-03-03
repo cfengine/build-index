@@ -5682,6 +5682,23 @@
       "subdirectory": "management/command-dispatcher",
       "by": "https://github.com/simonthalvorsen",
       "repo": "https://github.com/cfengine/modules"
+    },
+    "0.0.2": {
+      "commit": "9e03119bd2ace4ce4feda44da2d3ac0412582c2d",
+      "timestamp": 1772530846565,
+      "archive_url": "modules/command-dispatcher/9e03119bd2ace4ce4feda44da2d3ac0412582c2d.tar.gz",
+      "archive_sha256": "40b9ce251906287da3bb7e92c77edb8c49b6e438b05b46cf810543c12e8a70d7",
+      "readme_url": "modules/command-dispatcher/9e03119bd2ace4ce4feda44da2d3ac0412582c2d.md",
+      "readme_sha256": "75a50f8cac9f55a639c4220382b3348d95cbc6ccb81c8d8a5b319b9984226e3f",
+      "steps": [
+        "copy main.cf services/cfbs/modules/command-dispatcher/main.cf",
+        "policy_files services/cfbs/command-dispatcher/main.cf",
+        "bundles command_dispatcher:main",
+        "input ./input.json def.json"
+      ],
+      "subdirectory": "management/command-dispatcher",
+      "by": "https://github.com/simonthalvorsen",
+      "repo": "https://github.com/cfengine/modules"
     }
   }
 }
