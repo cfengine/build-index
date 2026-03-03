@@ -20,8 +20,8 @@
       "repo": "https://github.com/cfengine/modules",
       "subdirectory": "management/command-dispatcher",
       "by": "https://github.com/simonthalvorsen",
-      "version": "0.0.1",
-      "commit": "7ccdba3257d6fd806335e4d77e72828d891de4e5",
+      "version": "0.0.2",
+      "commit": "9e03119bd2ace4ce4feda44da2d3ac0412582c2d",
       "steps": [
         "copy main.cf services/cfbs/modules/command-dispatcher/main.cf",
         "policy_files services/cfbs/command-dispatcher/main.cf",
