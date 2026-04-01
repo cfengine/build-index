@@ -523,6 +523,7 @@
     "ftp-server-not-installed": { "alias": "uninstall-ftp" },
     "git": { "alias": "promise-type-git" },
     "groups": { "alias": "promise-type-groups" },
+    "sshd": { "alias": "promise-type-sshd" },
     "http": { "alias": "promise-type-http" },
     "install-aide": {
       "description": "Ensures the AIDE (Advanced Intrusion Detection Environment) software is installed.",
@@ -1244,6 +1245,21 @@
       "steps": [
         "copy groups.py modules/promises/",
         "replace_version 1 0.0.0 modules/promises/groups.py",
+        "append enable.cf services/init.cf"
+      ]
+    },
+    "promise-type-sshd": {
+      "description": "Experimental promise type to manage global sshd configuration.",
+      "tags": ["promise-type", "experimental"],
+      "repo": "https://github.com/cfengine/modules",
+      "by": "https://github.com/larsewi",
+      "version": "0.1.0",
+      "commit": "679c6c0b18cdb517c7595b1701c3707f47106da5",
+      "subdirectory": "promise-types/sshd",
+      "dependencies": ["library-for-promise-types-in-python"],
+      "steps": [
+        "copy sshd_promise_type.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/sshd_promise_type.py",
         "append enable.cf services/init.cf"
       ]
     },
