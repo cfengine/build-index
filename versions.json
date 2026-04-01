@@ -5717,5 +5717,26 @@
       "by": "https://github.com/simonthalvorsen",
       "repo": "https://github.com/cfengine/modules"
     }
+  },
+  "promise-type-sshd": {
+    "0.1.0": {
+      "commit": "679c6c0b18cdb517c7595b1701c3707f47106da5",
+      "timestamp": 1775043486608,
+      "archive_url": "modules/promise-type-sshd/679c6c0b18cdb517c7595b1701c3707f47106da5.tar.gz",
+      "archive_sha256": "992dc8a09a22c5692c41ba3a46fa4e6769ff4ea4da00cb5b5163ed1fccac9fb1",
+      "readme_url": "modules/promise-type-sshd/679c6c0b18cdb517c7595b1701c3707f47106da5.md",
+      "readme_sha256": "6d8bdee16bc78f12fa3928c005f57fc92cdac1ee7a5968f2a10df1bb52b8e642",
+      "steps": [
+        "copy sshd_promise_type.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/sshd_promise_type.py",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/sshd",
+      "by": "https://github.com/larsewi",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    }
   }
 }
