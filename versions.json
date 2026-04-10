@@ -5811,5 +5811,25 @@
         "library-for-promise-types-in-python"
       ]
     }
+  },
+  "promise-type-appstreams": {
+    "0.1.0": {
+      "commit": "fecb785cec68bb17e080b802ab9b79ad5ed78906",
+      "timestamp": 1775835953723,
+      "archive_url": "modules/promise-type-appstreams/fecb785cec68bb17e080b802ab9b79ad5ed78906.tar.gz",
+      "archive_sha256": "f4404df00a3e50b93859425105a9cd12b7d359d053cce646fe534582d63cf9d1",
+      "readme_url": "modules/promise-type-appstreams/fecb785cec68bb17e080b802ab9b79ad5ed78906.md",
+      "readme_sha256": "0ab451626e546ca4d2a60736ff8056a8575237b5d36443b0e670a0be2ab261af",
+      "steps": [
+        "copy appstreams.py modules/promises/",
+        "append init.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/appstreams",
+      "by": "https://github.com/nickanderson",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    }
   }
 }
