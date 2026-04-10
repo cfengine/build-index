@@ -86,6 +86,7 @@
       ]
     },
     "ansible": { "alias": "promise-type-ansible" },
+    "appstreams": { "alias": "promise-type-appstreams" },
     "autorun": {
       "description": "Enables autorun functionality.",
       "tags": ["supported", "management"],
@@ -1202,6 +1203,20 @@
       "steps": [
         "copy ansible_promise.py modules/promises/",
         "append enable.cf services/init.cf"
+      ]
+    },
+    "promise-type-appstreams": {
+      "description": "Promise type to manage AppStream modules.",
+      "tags": ["promise-type", "experimental"],
+      "repo": "https://github.com/cfengine/modules",
+      "by": "https://github.com/nickanderson",
+      "version": "0.1.0",
+      "commit": "fecb785cec68bb17e080b802ab9b79ad5ed78906",
+      "subdirectory": "promise-types/appstreams",
+      "dependencies": ["library-for-promise-types-in-python"],
+      "steps": [
+        "copy appstreams.py modules/promises/",
+        "append init.cf services/init.cf"
       ]
     },
     "promise-type-docker-compose": {
