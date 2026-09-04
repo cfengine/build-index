@@ -6564,5 +6564,24 @@
         "promise-type-ansible"
       ]
     }
+  },
+  "shell-scripts-runner": {
+    "1.0.0": {
+      "commit": "eafd96ed643d39131a8539315889c3e93214fff1",
+      "timestamp": 1788528534924,
+      "archive_url": "modules/shell-scripts-runner/eafd96ed643d39131a8539315889c3e93214fff1.tar.gz",
+      "archive_sha256": "f52210db15dbfad3392a1e9cf2aaa7bd4c0ad73874bb1a99507e8b625444e4ef",
+      "readme_url": null,
+      "readme_sha256": null,
+      "steps": [
+        "copy main.cf services/cfbs/modules/shell-scripts-runner/main.cf",
+        "policy_files services/cfbs/modules/shell-scripts-runner/main.cf",
+        "bundles shell_scripts_runner:main",
+        "input ./input.json def.json"
+      ],
+      "subdirectory": "shell-scripts-runner",
+      "by": "https://github.com/aleksandrychev",
+      "repo": "https://github.com/aleksandrychev/cfengine-shell-scripts-runner"
+    }
   }
 }
