@@ -6583,5 +6583,24 @@
       "by": "https://github.com/aleksandrychev",
       "repo": "https://github.com/aleksandrychev/cfengine-shell-scripts-runner"
     }
+  },
+  "run-shell-scripts": {
+    "1.0.1": {
+      "commit": "3b58551383733acfcb4c513d9cd1c67646f68188",
+      "timestamp": 1788533969836,
+      "archive_url": "modules/run-shell-scripts/3b58551383733acfcb4c513d9cd1c67646f68188.tar.gz",
+      "archive_sha256": "afde22d58630b05208f8ef0ce77f19d3fc4a27060668e18cf296675fbc3decbb",
+      "readme_url": "modules/run-shell-scripts/3b58551383733acfcb4c513d9cd1c67646f68188.md",
+      "readme_sha256": "ffb41d1bce65d5f3e1f059271aa832d799eae648daba7575e5ed06248fff3a70",
+      "steps": [
+        "copy policy/main.cf services/cfbs/modules/run-shell-scripts/main.cf",
+        "policy_files services/cfbs/modules/run-shell-scripts/main.cf",
+        "bundles run_shell_scripts:main",
+        "input ./input.json def.json"
+      ],
+      "subdirectory": "",
+      "by": "https://github.com/aleksandrychev",
+      "repo": "https://github.com/aleksandrychev/cfengine-shell-scripts-runner"
+    }
   }
 }
