@@ -1727,6 +1727,51 @@
       ]
     },
     "scl": { "alias": "surf-cfengine-library" },
+    "shell-scripts-runner": {
+      "description": "Executes your shell/bash scripts on hosts, with an optional class condition and a minimum interval between runs.",
+      "tags": ["experimental", "management"],
+      "repo": "https://github.com/aleksandrychev/cfengine-shell-scripts-runner",
+      "by": "https://github.com/aleksandrychev",
+      "version": "1.0.0",
+      "commit": "eafd96ed643d39131a8539315889c3e93214fff1",
+      "subdirectory": "shell-scripts-runner",
+      "steps": [
+        "copy main.cf services/cfbs/modules/shell-scripts-runner/main.cf",
+        "policy_files services/cfbs/modules/shell-scripts-runner/main.cf",
+        "bundles shell_scripts_runner:main",
+        "input ./input.json def.json"
+      ],
+      "input": [
+        {
+          "type": "file",
+          "variable": "scripts",
+          "namespace": "shell_scripts_runner",
+          "bundle": "main",
+          "label": "Script",
+          "question": "Path to the shell/bash script to run",
+          "filetype": [".sh", ".bash"],
+          "while": "Do you want to add another script to run?"
+        },
+        {
+          "type": "string",
+          "variable": "condition",
+          "namespace": "shell_scripts_runner",
+          "bundle": "main",
+          "label": "Condition",
+          "question": "Class expression for when to run the scripts",
+          "default": "any"
+        },
+        {
+          "type": "string",
+          "variable": "ifelapsed",
+          "namespace": "shell_scripts_runner",
+          "bundle": "main",
+          "label": "ifelapsed",
+          "question": "Minimum number of minutes between runs of the scripts (0 = every agent execution)",
+          "default": "0"
+        }
+      ]
+    },
     "ssh-ciphers-strong": {
       "description": "Ensures that the SSH daemon uses strong ciphers.",
       "tags": ["security", "ssh", "experimental"],
