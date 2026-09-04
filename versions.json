@@ -1725,6 +1725,25 @@
       "dependencies": [
         "library-for-promise-types-in-python"
       ]
+    },
+    "1.0.1": {
+      "commit": "63dbebd455a4f0fee5615624bdec55e0231cacc3",
+      "timestamp": 1788514811927,
+      "archive_url": "modules/promise-type-ansible/63dbebd455a4f0fee5615624bdec55e0231cacc3.tar.gz",
+      "archive_sha256": "cd2a3ecb9072814315ad8ba6c65a1788555b63ba318983f726cd5675bc5b71bd",
+      "readme_url": "modules/promise-type-ansible/63dbebd455a4f0fee5615624bdec55e0231cacc3.md",
+      "readme_sha256": "df6005cdc8ce72992235243511e20d919ea8571937e8f37256b5317718053193",
+      "steps": [
+        "copy ansible_promise.py modules/promises/",
+        "copy ansible_promise.sh modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/ansible",
+      "by": "https://github.com/tranchitella",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
     }
   },
   "promise-type-git": {
@@ -6503,6 +6522,28 @@
       "subdirectory": "",
       "by": "https://github.com/aleksandrychev",
       "repo": "https://github.com/aleksandrychev/cfengine-manage-swap"
+    }
+  },
+  "run-ansible-playbooks": {
+    "0.1.0": {
+      "commit": "63dbebd455a4f0fee5615624bdec55e0231cacc3",
+      "timestamp": 1788514812456,
+      "archive_url": "modules/run-ansible-playbooks/63dbebd455a4f0fee5615624bdec55e0231cacc3.tar.gz",
+      "archive_sha256": "3fe4aa77edb4cd0bac67b7c22f06e59831bae1897c4b1247ccb2d79d7ee2a2b9",
+      "readme_url": "modules/run-ansible-playbooks/63dbebd455a4f0fee5615624bdec55e0231cacc3.md",
+      "readme_sha256": "a24e0e57d33b3be6a92e11165733e4ae1c90475b56053b17d03b22308d6aab07",
+      "steps": [
+        "copy main.cf services/cfbs/modules/run-ansible-playbooks/main.cf",
+        "policy_files services/cfbs/modules/run-ansible-playbooks/main.cf",
+        "bundles run_ansible_playbooks:main",
+        "input ./input.json def.json"
+      ],
+      "subdirectory": "management/run-ansible-playbooks",
+      "by": "https://github.com/larsewi",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "promise-type-ansible"
+      ]
     }
   }
 }
