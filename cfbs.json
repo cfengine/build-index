@@ -1731,7 +1731,7 @@
       "tags": ["experimental", "management"],
       "repo": "https://github.com/aleksandrychev/cfengine-shell-scripts-runner",
       "by": "https://github.com/aleksandrychev",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "commit": "3b58551383733acfcb4c513d9cd1c67646f68188",
       "steps": [
         "copy policy/main.cf services/cfbs/modules/run-shell-scripts/main.cf",
