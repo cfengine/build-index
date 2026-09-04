@@ -1728,9 +1728,9 @@
     },
     "1.0.1": {
       "commit": "63dbebd455a4f0fee5615624bdec55e0231cacc3",
-      "timestamp": 1788514811927,
+      "timestamp": 1788508859481,
       "archive_url": "modules/promise-type-ansible/63dbebd455a4f0fee5615624bdec55e0231cacc3.tar.gz",
-      "archive_sha256": "cd2a3ecb9072814315ad8ba6c65a1788555b63ba318983f726cd5675bc5b71bd",
+      "archive_sha256": "01c80db8b1370e5a91f2ab0753e0414cfdd03af69b3976237299774a5561aea5",
       "readme_url": "modules/promise-type-ansible/63dbebd455a4f0fee5615624bdec55e0231cacc3.md",
       "readme_sha256": "df6005cdc8ce72992235243511e20d919ea8571937e8f37256b5317718053193",
       "steps": [
