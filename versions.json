@@ -6601,6 +6601,23 @@
       "subdirectory": "",
       "by": "https://github.com/aleksandrychev",
       "repo": "https://github.com/aleksandrychev/cfengine-shell-scripts-runner"
+    },
+    "2.0.0": {
+      "commit": "dc135f57cdb4de44a9a2c4144705cf5e59dec099",
+      "timestamp": 1789728264522,
+      "archive_url": "modules/run-shell-scripts/dc135f57cdb4de44a9a2c4144705cf5e59dec099.tar.gz",
+      "archive_sha256": "9a99f96665d0a032300b70a06fbb3455963912254671399b74c61b054ed22962",
+      "readme_url": "modules/run-shell-scripts/dc135f57cdb4de44a9a2c4144705cf5e59dec099.md",
+      "readme_sha256": "5948d1cdc2e1b7783b988e1c73912237dbc82bc76e958d9f64e57c958eca0044",
+      "steps": [
+        "copy policy/main.cf services/cfbs/modules/run-shell-scripts/main.cf",
+        "policy_files services/cfbs/modules/run-shell-scripts/main.cf",
+        "bundles run_shell_scripts:main",
+        "input ./input.json def.json"
+      ],
+      "subdirectory": "",
+      "by": "https://github.com/aleksandrychev",
+      "repo": "https://github.com/aleksandrychev/cfengine-shell-scripts-runner"
     }
   },
   "ansible-playbook-dispatcher": {
