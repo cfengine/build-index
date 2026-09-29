@@ -694,6 +694,7 @@
     "groups": { "alias": "promise-type-groups" },
     "sshd": { "alias": "promise-type-sshd" },
     "http": { "alias": "promise-type-http" },
+    "yaml": { "alias": "promise-type-yaml" },
     "install-aide": {
       "description": "Ensures the AIDE (Advanced Intrusion Detection Environment) software is installed.",
       "tags": ["supported", "security", "compliance"],
@@ -1709,6 +1710,23 @@
       "steps": [
         "copy systemd.py modules/promises/",
         "replace_version 1 0.0.0 modules/promises/systemd.py",
+        "append enable.cf services/init.cf"
+      ]
+    },
+    "promise-type-yaml": {
+      "description": "Promise type to edit YAML files.",
+      "tags": ["experimental", "promise-type", "yaml"],
+      "repo": "https://github.com/cfengine/modules",
+      "subdirectory": "promise-types/yaml",
+      "by": "https://github.com/simonthalvorsen",
+      "version": "0.1.0",
+      "commit": "f743e08cef2da94933560b168eee1e1bc324d349",
+      "dependencies": ["library-for-promise-types-in-python"],
+      "steps": [
+        "copy yaml_promise_type.py modules/promises/",
+        "copy yaml_lite.py modules/promises/",
+        "copy jq_filter.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/yaml_promise_type.py",
         "append enable.cf services/init.cf"
       ]
     },
