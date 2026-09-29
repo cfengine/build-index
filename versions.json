@@ -6641,5 +6641,28 @@
         "promise-type-ansible"
       ]
     }
+  },
+  "promise-type-yaml": {
+    "0.1.0": {
+      "commit": "f743e08cef2da94933560b168eee1e1bc324d349",
+      "timestamp": 1790674929669,
+      "archive_url": "modules/promise-type-yaml/f743e08cef2da94933560b168eee1e1bc324d349.tar.gz",
+      "archive_sha256": "00f6e3033e93b5a22ea234852229de4c51621063f1bab7c843207a81dd71c4f8",
+      "readme_url": "modules/promise-type-yaml/f743e08cef2da94933560b168eee1e1bc324d349.md",
+      "readme_sha256": "e58d63ddece72925e8ac210da52a0a9ebe0bd261fb939207c89499e2b8403594",
+      "steps": [
+        "copy yaml_promise_type.py modules/promises/",
+        "copy yaml_lite.py modules/promises/",
+        "copy jq_filter.py modules/promises/",
+        "replace_version 1 0.0.0 modules/promises/yaml_promise_type.py",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/yaml",
+      "by": "https://github.com/simonthalvorsen",
+      "repo": "https://github.com/cfengine/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    }
   }
 }
