@@ -714,8 +714,8 @@
       "tags": ["experimental", "supported", "software", "ansible"],
       "repo": "https://github.com/cfengine/modules",
       "by": "https://github.com/craigcomstock",
-      "version": "0.0.3",
-      "commit": "b93716ca65570d65bfbabeb181bd1563f595d884",
+      "version": "0.0.4",
+      "commit": "83851939fca8748c373966fb2b90d367792b50e3",
       "subdirectory": "software/install-ansible",
       "steps": [
         "copy install-ansible.cf services/cfbs/modules/software/install-ansible/install-ansible.cf",
