@@ -136,6 +136,7 @@
     },
     "ansible": { "alias": "promise-type-ansible" },
     "appstreams": { "alias": "promise-type-appstreams" },
+    "assert": { "alias": "promise-type-assert" },
     "autorun": {
       "description": "Enables autorun functionality.",
       "tags": ["supported", "management"],
@@ -1592,6 +1593,20 @@
       "steps": [
         "copy appstreams.py modules/promises/",
         "append init.cf services/init.cf"
+      ]
+    },
+    "promise-type-assert": {
+      "description": "Promise type for asserting facts about system state, used to write test policy.",
+      "tags": ["promise-type", "experimental", "testing"],
+      "repo": "https://github.com/simonthalvorsen/modules",
+      "by": "https://github.com/simonthalvorsen",
+      "version": "0.1.0",
+      "commit": "620f1d516a8e432540573df1dfc62eb6dac2cea4",
+      "subdirectory": "promise-types/assert",
+      "dependencies": ["library-for-promise-types-in-python"],
+      "steps": [
+        "copy assert_promise_type.py modules/promises/",
+        "append enable.cf services/init.cf"
       ]
     },
     "promise-type-docker-compose": {
