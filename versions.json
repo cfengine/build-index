@@ -6680,5 +6680,25 @@
         "library-for-promise-types-in-python"
       ]
     }
+  },
+  "promise-type-assert": {
+    "0.1.0": {
+      "commit": "620f1d516a8e432540573df1dfc62eb6dac2cea4",
+      "timestamp": 1791188760963,
+      "archive_url": "modules/promise-type-assert/620f1d516a8e432540573df1dfc62eb6dac2cea4.tar.gz",
+      "archive_sha256": "65ea71187508e6920bca2fbf10fd1d8de3b0d7bbddf26cb92b46c5b77d138439",
+      "readme_url": "modules/promise-type-assert/620f1d516a8e432540573df1dfc62eb6dac2cea4.md",
+      "readme_sha256": "a878b73088aeb067c0cfc37070738857f6d96f84f6c2cbc486630976e452b5da",
+      "steps": [
+        "copy assert_promise_type.py modules/promises/",
+        "append enable.cf services/init.cf"
+      ],
+      "subdirectory": "promise-types/assert",
+      "by": "https://github.com/simonthalvorsen",
+      "repo": "https://github.com/simonthalvorsen/modules",
+      "dependencies": [
+        "library-for-promise-types-in-python"
+      ]
+    }
   }
 }
