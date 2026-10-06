@@ -4,7 +4,7 @@
 
 If you want to contribute to CFEngine Build, we highly recommend that you go through our getting started guide first.
 
-https://docs.cfengine.com/docs/master/guide-getting-started-with-cfengine-build.html
+https://docs.cfengine.com/docs/master/getting-started/
 
 In that guide you learn how to install CFEngine, use modules, write policy and even develop modules.
 After implementing your module, you can read below to see what is necessary for submitting it to the official CFEngine Build Index with a Pull Request (PR).
