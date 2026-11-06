@@ -1352,10 +1352,10 @@
       "tags": ["supported", "base"],
       "repo": "https://github.com/cfengine/masterfiles",
       "by": "https://github.com/cfengine",
-      "version": "3.27.3",
-      "commit": "d15a8e749ca73d29d78015faa2cf9b1d0e19289c",
+      "version": "3.29.0",
+      "commit": "a81d8ab8483e8624441cb3010324ba10f59499ce",
       "steps": [
-        "run EXPLICIT_VERSION=3.27.3 EXPLICIT_RELEASE=1 ./prepare.sh -y",
+        "run EXPLICIT_VERSION=3.29.0 EXPLICIT_RELEASE=1 ./prepare.sh -y",
         "copy ./ ./"
       ]
     },
